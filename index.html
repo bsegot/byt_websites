@@ -1,64 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BYT Website</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #0f1115;
-      --fg: #f2f2f2;
-      --accent: #6c8cff;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--bg);
-      color: var(--fg);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      text-align: center;
-      padding: 2rem;
-    }
-    main { max-width: 32rem; }
-    h1 {
-      font-size: 2.25rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      color: #a3a7b3;
-      line-height: 1.5;
-    }
-    code {
-      background: #1c1f27;
-      padding: 0.15rem 0.4rem;
-      border-radius: 0.3rem;
-      color: var(--accent);
-    }
-    .badge {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.4rem 0.9rem;
-      border: 1px solid var(--accent);
-      border-radius: 999px;
-      font-size: 0.85rem;
-      color: var(--accent);
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BYT — Independent Proprietary Trading</title>
+<meta name="description" content="BYT is an independent, founder-led proprietary trading operation. Systematic strategies, rigorous research, and disciplined risk management — trading our own capital.">
+<meta name="theme-color" content="#0a0d12">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="BYT — Independent Proprietary Trading">
+<meta property="og:description" content="An independent, founder-led proprietary trading operation. Systematic strategies, rigorous research, disciplined risk management.">
+<meta property="og:url" content="https://bytechnologies.dev/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BYT — Independent Proprietary Trading">
+<meta name="twitter:description" content="An independent, founder-led proprietary trading operation.">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BYT",
+  "url": "https://bytechnologies.dev/",
+  "email": "contact@bytechnologies.dev",
+  "description": "Independent, founder-led proprietary trading operation."
+}
+</script>
 </head>
 <body>
-  <main>
-    <h1>It works 🎉</h1>
-    <p>
-      This page is served directly from the <code>byt_websites</code> GitHub repo
-      via GitHub Pages — no server, no DNS, no Cloudflare setup required.
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="logo" aria-label="BYT — home">BYT</a>
+
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#approach">Approach</a>
+      <a href="#principles">Principles</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <canvas id="network" aria-hidden="true"></canvas>
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow reveal">Proprietary Trading</p>
+      <h1 class="reveal">Process over prediction.</h1>
+      <p class="hero-sub reveal">
+        BYT is an independent, founder-led trading operation. We build systematic
+        strategies for exchange-listed derivatives, test them rigorously, and trade
+        our own capital with discipline.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#about" class="btn btn-ghost">Learn more</a>
+        <a href="mailto:contact@bytechnologies.dev" class="btn btn-primary">Get in touch</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to content">
+      <span></span>
+    </a>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">About</p>
+        <h2>An independent trading operation.</h2>
+      </div>
+      <div class="about-grid">
+        <p class="lede reveal">
+          BYT trades exchange-listed derivatives using capital it owns. There are no
+          outside investors, no managed accounts, and no advisory services — the firm
+          is founder-led and operates entirely in-house, from research through execution.
+        </p>
+        <p class="reveal">
+          That independence keeps incentives simple. Every strategy is judged on process
+          and risk-adjusted results — not on asset-gathering, not on client relationships,
+          and not on a story that has to sound good to outside investors.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="approach">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Approach</p>
+        <h2>Research-driven, systematically executed.</h2>
+      </div>
+      <div class="card-grid">
+        <div class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V9M12 19V4M20 19v-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Research</h3>
+          <p>Every idea starts as a hypothesis and is validated against historical and live market data before it earns capital.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.6"/><rect x="13" y="4" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.6"/><rect x="4" y="13" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.6"/><rect x="13" y="13" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3>Proprietary Technology</h3>
+          <p>Custom data pipelines, scanners, and monitoring tools support research and execution end-to-end.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l2-7 4 14 2-7h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Backtesting</h3>
+          <p>Strategies are stress-tested across market regimes — not just the ones that flatter them — before deployment.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v5c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V7l8-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Risk Management</h3>
+          <p>Position sizing and exposure limits are enforced systematically, not left to discretion in the moment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="principles">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Principles</p>
+        <h2>What guides the work.</h2>
+      </div>
+      <div class="principles-list">
+        <div class="principle reveal">
+          <span class="principle-num">01</span>
+          <div>
+            <h3>Discipline</h3>
+            <p>Rules are set in advance and followed under pressure, not rewritten after the fact.</p>
+          </div>
+        </div>
+        <div class="principle reveal">
+          <span class="principle-num">02</span>
+          <div>
+            <h3>Independence</h3>
+            <p>No outside capital and no external mandates — decisions are made on their merits alone.</p>
+          </div>
+        </div>
+        <div class="principle reveal">
+          <span class="principle-num">03</span>
+          <div>
+            <h3>Patience</h3>
+            <p>Good process is judged over years, not single trades.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contact">
+    <div class="container contact-inner">
+      <p class="eyebrow reveal">Contact</p>
+      <h2 class="reveal">Get in touch.</h2>
+      <p class="reveal contact-sub">For all inquiries, reach out directly.</p>
+      <a href="mailto:contact@bytechnologies.dev" class="btn btn-primary reveal">contact@bytechnologies.dev</a>
+      <p class="fine-print reveal">BYT does not manage outside capital, offer investment advice, or accept client accounts.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> BYT Technologies</span>
+    <p class="disclaimer">
+      Independent proprietary trading. This site is provided for general information only and
+      does not constitute an offer or solicitation to buy or sell any security or financial
+      instrument, nor investment, legal, or tax advice. Trading involves substantial risk of loss.
     </p>
-    <p>Edit <code>index.html</code> and push to <code>main</code> to update this page.</p>
-    <span class="badge">GitHub Pages test</span>
-  </main>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
