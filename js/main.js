@@ -61,7 +61,7 @@
   let animId = null;
   let running = false;
 
-  const ACCENT = "201, 169, 97"; // matches --accent
+  const ACCENT = "150, 105, 47"; // matches --accent
 
   function resize() {
     dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -99,7 +99,7 @@
         const dx = a.x - b.x, dy = a.y - b.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < linkDist) {
-          const alpha = (1 - dist / linkDist) * 0.22;
+          const alpha = (1 - dist / linkDist) * 0.3;
           ctx.strokeStyle = `rgba(${ACCENT}, ${alpha})`;
           ctx.lineWidth = 1;
           ctx.beginPath();
@@ -111,7 +111,7 @@
     }
 
     for (const p of particles) {
-      ctx.fillStyle = `rgba(${ACCENT}, 0.55)`;
+      ctx.fillStyle = `rgba(${ACCENT}, 0.65)`;
       ctx.beginPath();
       ctx.arc(p.x, p.y, 1.6, 0, Math.PI * 2);
       ctx.fill();
