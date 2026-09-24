@@ -45,7 +45,6 @@
       </svg>
     </a>
     <nav class="nav" id="nav">
-      <a href="about.html">About</a>
       <a href="approach.html">Approach</a>
       <a href="principles.html">Principles</a>
       <a href="culture.html">Culture</a>
@@ -60,96 +59,39 @@
 
 <main id="main">
 
-  <section class="hero" id="top">
+  <section class="hero page-hero">
     <div class="hero-mesh" aria-hidden="true"><span></span><span></span><span></span></div>
     <canvas id="network" aria-hidden="true"></canvas>
     <div class="hero-scrim" aria-hidden="true"></div>
     <div class="container hero-inner">
-      <p class="eyebrow reveal">Proprietary Trading</p>
-      <h1 data-split>Process over prediction.</h1>
-      <p class="hero-sub reveal">
-        BYT is an independent, founder-led trading operation. We build systematic
-        strategies for exchange-listed derivatives, test them rigorously, and trade
-        our own capital with discipline.
-      </p>
-      <div class="hero-actions reveal">
-        <a href="#overview" class="btn btn-ghost">Learn more</a>
-        <a href="mailto:contact@bytechnologies.dev" class="btn btn-primary">Get in touch</a>
-      </div>
-      <div class="market-status reveal" aria-live="polite">
-        <span class="market-dot" id="market-dot"></span>
-        <span id="market-status-text">Checking markets…</span>
-      </div>
-    </div>
-    <a href="#overview" class="scroll-cue" aria-label="Scroll to content">
-      <span></span>
-    </a>
-  </section>
-
-  <div id="overview"></div>
-
-  <section class="teaser">
-    <div class="container">
-      <div class="teaser-head reveal">
-        <p class="eyebrow">01 · About</p>
-        <a href="about.html" class="teaser-link">Read the full story
-          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
-      <p class="teaser-lede reveal">
-        BYT trades exchange-listed derivatives using capital it owns. No outside investors,
-        no managed accounts, no advisory services — founder-led, from research through execution.
-      </p>
+      <p class="eyebrow reveal">About</p>
+      <h1 data-split>An independent trading operation.</h1>
     </div>
   </section>
 
-  <section class="teaser section-alt">
-    <div class="container">
-      <div class="teaser-head reveal">
-        <p class="eyebrow">02 · Approach</p>
-        <a href="approach.html" class="teaser-link">See the full pipeline
-          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
+  <section class="section">
+    <div class="container about-split">
+      <div class="about-copy">
+        <p class="lede reveal">
+          BYT trades exchange-listed derivatives using capital it owns. There are no
+          outside investors, no managed accounts, and no advisory services — the firm
+          is founder-led and operates entirely in-house, from research through execution.
+        </p>
+        <p class="reveal">
+          That independence keeps incentives simple. Every strategy is judged on process
+          and risk-adjusted results — not on asset-gathering, not on client relationships,
+          and not on a story that has to sound good to outside investors.
+        </p>
+        <p class="reveal">
+          Day to day, that means building and maintaining its own tooling — data collection,
+          backtesting infrastructure, and monitoring — rather than relying on a vendor stack
+          or an off-the-shelf platform.
+        </p>
+        <p class="pull-quote reveal">No outside capital. No client relationships. Just process.</p>
       </div>
-      <p class="teaser-lede reveal" style="margin-bottom: 2rem;">Research-driven, systematically executed, end to end.</p>
-      <div class="pipeline-preview reveal">
-        <span>Research</span><i>→</i><span>Technology</span><i>→</i><span>Backtesting</span><i>→</i><span>Risk</span><i>→</i><span>Execution</span>
+      <div class="signal-visual reveal" aria-hidden="true">
+        <canvas id="signal"></canvas>
       </div>
-    </div>
-  </section>
-
-  <section class="teaser">
-    <div class="container">
-      <div class="teaser-head reveal">
-        <p class="eyebrow">03 · Principles</p>
-        <a href="principles.html" class="teaser-link">Read the full principles
-          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
-      <div class="principles-teaser">
-        <a href="principles.html#discipline" class="reveal">
-          <span class="principle-num">01</span>
-          <h3>Discipline</h3>
-        </a>
-        <a href="principles.html#independence" class="reveal">
-          <span class="principle-num">02</span>
-          <h3>Independence</h3>
-        </a>
-        <a href="principles.html#patience" class="reveal">
-          <span class="principle-num">03</span>
-          <h3>Patience</h3>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt" id="contact">
-    <div class="container contact-inner">
-      <p class="eyebrow reveal">Contact</p>
-      <h2 class="reveal">Get in touch.</h2>
-      <p class="reveal contact-sub">For all inquiries, reach out directly.</p>
-      <a href="mailto:contact@bytechnologies.dev" class="btn btn-primary reveal">contact@bytechnologies.dev</a>
-      <p class="fine-print reveal">BYT does not manage outside capital, offer investment advice, or accept client accounts.</p>
     </div>
   </section>
 
@@ -165,7 +107,6 @@
     </p>
   </div>
 </footer>
-
 
 <script src="js/main.js"></script>
 </body>
