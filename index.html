@@ -38,15 +38,20 @@
 
 <header class="site-header" id="site-header">
   <div class="container header-inner">
-    <a href="#top" class="logo" aria-label="BYT — home">BYT</a>
-
+    <a href="index.html" class="logo" aria-label="BYT — home">
+      <svg class="logo-mark" viewBox="0 0 84 84" aria-hidden="true">
+        <circle cx="42" cy="42" r="38"/>
+        <text x="42" y="52" text-anchor="middle">BYT</text>
+      </svg>
+    </a>
     <nav class="nav" id="nav">
-      <a href="#about">About</a>
-      <a href="#approach">Approach</a>
-      <a href="#principles">Principles</a>
-      <a href="#contact" class="nav-cta">Contact</a>
+      <a href="about.html">About</a>
+      <a href="approach.html">Approach</a>
+      <a href="principles.html">Principles</a>
+      <a href="culture.html">Culture</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
     </nav>
-
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
       <span></span><span></span><span></span>
     </button>
@@ -56,114 +61,84 @@
 <main id="main">
 
   <section class="hero" id="top">
+    <div class="hero-mesh" aria-hidden="true"><span></span><span></span><span></span></div>
     <canvas id="network" aria-hidden="true"></canvas>
     <div class="hero-scrim" aria-hidden="true"></div>
     <div class="container hero-inner">
       <p class="eyebrow reveal">Proprietary Trading</p>
-      <h1 class="reveal">Process over prediction.</h1>
+      <h1 data-split>Process over prediction.</h1>
       <p class="hero-sub reveal">
         BYT is an independent, founder-led trading operation. We build systematic
         strategies for exchange-listed derivatives, test them rigorously, and trade
         our own capital with discipline.
       </p>
       <div class="hero-actions reveal">
-        <a href="#about" class="btn btn-ghost">Learn more</a>
+        <a href="#overview" class="btn btn-ghost">Learn more</a>
         <a href="mailto:contact@bytechnologies.dev" class="btn btn-primary">Get in touch</a>
       </div>
+      <div class="market-status reveal" aria-live="polite">
+        <span class="market-dot" id="market-dot"></span>
+        <span id="market-status-text">Checking markets…</span>
+      </div>
     </div>
-    <a href="#about" class="scroll-cue" aria-label="Scroll to content">
+    <a href="#overview" class="scroll-cue" aria-label="Scroll to content">
       <span></span>
     </a>
   </section>
 
-  <section class="section" id="about">
+  <div id="overview"></div>
+
+  <section class="teaser">
     <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">About</p>
-        <h2>An independent trading operation.</h2>
+      <div class="teaser-head reveal">
+        <p class="eyebrow">01 · About</p>
+        <a href="about.html" class="teaser-link">Read the full story
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
-      <div class="about-grid">
-        <p class="lede reveal">
-          BYT trades exchange-listed derivatives using capital it owns. There are no
-          outside investors, no managed accounts, and no advisory services — the firm
-          is founder-led and operates entirely in-house, from research through execution.
-        </p>
-        <p class="reveal">
-          That independence keeps incentives simple. Every strategy is judged on process
-          and risk-adjusted results — not on asset-gathering, not on client relationships,
-          and not on a story that has to sound good to outside investors.
-        </p>
+      <p class="teaser-lede reveal">
+        BYT trades exchange-listed derivatives using capital it owns. No outside investors,
+        no managed accounts, no advisory services — founder-led, from research through execution.
+      </p>
+    </div>
+  </section>
+
+  <section class="teaser section-alt">
+    <div class="container">
+      <div class="teaser-head reveal">
+        <p class="eyebrow">02 · Approach</p>
+        <a href="approach.html" class="teaser-link">See the full pipeline
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <p class="teaser-lede reveal" style="margin-bottom: 2rem;">Research-driven, systematically executed, end to end.</p>
+      <div class="pipeline-preview reveal">
+        <span>Research</span><i>→</i><span>Technology</span><i>→</i><span>Backtesting</span><i>→</i><span>Risk</span><i>→</i><span>Execution</span>
       </div>
     </div>
   </section>
 
-  <section class="section section-alt" id="approach">
+  <section class="teaser">
     <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Approach</p>
-        <h2>Research-driven, systematically executed.</h2>
+      <div class="teaser-head reveal">
+        <p class="eyebrow">03 · Principles</p>
+        <a href="principles.html" class="teaser-link">Read the full principles
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
-      <div class="card-grid">
-        <div class="card reveal">
-          <div class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V9M12 19V4M20 19v-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Research</h3>
-          <p>Every idea starts as a hypothesis and is validated against historical and live market data before it earns capital.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.6"/><rect x="13" y="4" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.6"/><rect x="4" y="13" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.6"/><rect x="13" y="13" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.6"/></svg>
-          </div>
-          <h3>Proprietary Technology</h3>
-          <p>Custom data pipelines, scanners, and monitoring tools support research and execution end-to-end.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l2-7 4 14 2-7h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Backtesting</h3>
-          <p>Strategies are stress-tested across market regimes — not just the ones that flatter them — before deployment.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v5c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V7l8-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Risk Management</h3>
-          <p>Position sizing and exposure limits are enforced systematically, not left to discretion in the moment.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="principles">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Principles</p>
-        <h2>What guides the work.</h2>
-      </div>
-      <div class="principles-list">
-        <div class="principle reveal">
+      <div class="principles-teaser">
+        <a href="principles.html#discipline" class="reveal">
           <span class="principle-num">01</span>
-          <div>
-            <h3>Discipline</h3>
-            <p>Rules are set in advance and followed under pressure, not rewritten after the fact.</p>
-          </div>
-        </div>
-        <div class="principle reveal">
+          <h3>Discipline</h3>
+        </a>
+        <a href="principles.html#independence" class="reveal">
           <span class="principle-num">02</span>
-          <div>
-            <h3>Independence</h3>
-            <p>No outside capital and no external mandates — decisions are made on their merits alone.</p>
-          </div>
-        </div>
-        <div class="principle reveal">
+          <h3>Independence</h3>
+        </a>
+        <a href="principles.html#patience" class="reveal">
           <span class="principle-num">03</span>
-          <div>
-            <h3>Patience</h3>
-            <p>Good process is judged over years, not single trades.</p>
-          </div>
-        </div>
+          <h3>Patience</h3>
+        </a>
       </div>
     </div>
   </section>
@@ -190,6 +165,7 @@
     </p>
   </div>
 </footer>
+
 
 <script src="js/main.js"></script>
 </body>
